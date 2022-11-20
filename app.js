@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require("body-Parser");
+const bodyParser = require("body-parser");
 
 const app = express();
 let items = ["Buy Food","Cook Food","Eat Food"];
@@ -42,6 +42,6 @@ app.get("/about",function(req,res){
 })
 
 
-app.listen(process.env.PORT,function(){
+app.listen(process.env.PORT|| 3000,function(){
   console.log("server is up and running");
 })
